@@ -1,0 +1,105 @@
+*{
+    background-color: rgb(189, 186, 186)!important;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto; 
+}
+
+a{
+    color: black!important;
+    text-decoration: none!important;
+}
+
+header{
+    margin-top: 2rem!important;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+h1{
+    line-height: 0.9rem!important;
+    padding-left: 0.5rem;
+}
+
+.single-piece{
+    margin-bottom: 0.75rem;
+    padding-left: 0.5rem;
+}
+
+.fa-solid{
+    margin-right: 0.5rem;
+    background-color: rgb(200, 198, 198)!important;
+}
+
+h2{
+    font-size: 1.2rem!important;
+    font-style: italic;
+    margin-bottom: 3rem!important;
+    padding-left: 0.5rem;
+}
+
+.title-section, .total-section{
+    margin-bottom: 12px;
+}
+
+.title-section{
+    cursor: pointer;
+}
+
+h3{
+    font-style: italic;
+    background-color: rgb(200, 198, 198)!important;
+    border-radius: 0.3rem;
+    padding: 0.2rem 0.2rem 0rem 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+
+.indicator{
+    color: rgb(72, 70, 70)!important;
+    float: right;
+}
+
+.inpute{
+    width: 3rem;
+    border: none;
+    background-color: rgb(200, 198, 198)!important;
+    border-radius: 0.3rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    text-align: center;
+}
+
+.partial{
+    width: 4.4rem;
+    margin-left: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 0.3rem;
+    background-color: rgb(213, 210, 210)!important;
+    text-align: center;
+}
+
+.total-span{
+    text-align: center;
+    font-size: xx-large;
+}
+
+.total-money{
+    text-align: center;
+    font-size: xx-large;
+}
+
+footer{
+    margin-top: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    color: rgb(72, 70, 70)!important;
+}
+
+.hidden{
+    display: none;
+}
+
+.gottem{
+    font-weight: bolder;
+}
+
