@@ -86,23 +86,6 @@ document.addEventListener('DOMContentLoaded',()=>{
 
     // printing a sort of recepits on page
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     
   });
 
