@@ -110,7 +110,7 @@ footer{
 } */
 
 .StyledReceipt {
-    background-color: #fff!important;
+    background-color: rgb(227, 226, 226)!important;
     width: 22rem;
     position: relative;
     padding: 1rem;
@@ -118,9 +118,8 @@ footer{
   }
   
   .StyledReceipt::after {
-    background-image: linear-gradient(135deg, #fff 0.5rem, transparent 0),
-      linear-gradient(-135deg, #fff 0.5rem, transparent 0);
-    background-position: left-bottom;
+    background-image: linear-gradient(135deg, rgb(227, 226, 226) 0.5rem, transparent 0),
+      linear-gradient(-135deg, rgb(227, 226, 226) 0.5rem, transparent 0);
     background-repeat: repeat-x;
     background-size: 1rem;
     content: '';
