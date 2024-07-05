@@ -106,5 +106,5 @@ footer{
 .receipt{
     height: 100px;
     width: 70%;
-    border: 1px solid red;
+    background-color: rgb(227, 226, 226)!important;
 }
