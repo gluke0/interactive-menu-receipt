@@ -81,6 +81,6 @@ document.addEventListener('DOMContentLoaded',()=>{
                 indicator.classList.remove('fa-chevron-up');
                 indicator.classList.add('fa-chevron-down');
             }
-        });
+        }); 
     });
   });
