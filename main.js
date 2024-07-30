@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded',()=>{
         element.textContent = billy;
     });
     
-    console.log("Total: " + billy);
+    // console.log("Total: " + billy);
     }
   
     let quantityIn = document.querySelectorAll('.pieces');
