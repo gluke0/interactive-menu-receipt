@@ -83,12 +83,4 @@ document.addEventListener('DOMContentLoaded',()=>{
             }
         });
     });
-
-
-
-
-
-
-    
-    
   });
