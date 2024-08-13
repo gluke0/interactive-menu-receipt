@@ -82,11 +82,13 @@ h3{
 .total-span{
     text-align: center;
     font-size: xx-large;
+    background-color: rgb(227, 226, 226)!important;
 }
 
 .total-money{
     text-align: center;
     font-size: xx-large;
+    background-color: rgb(227, 226, 226)!important;
 }
 
 .total-section{
@@ -105,6 +107,10 @@ footer{
 
 .gottem{
     font-weight: bolder;
+}
+
+.total{
+    background-color: rgb(227, 226, 226)!important;
 }
 
 .receipt {
