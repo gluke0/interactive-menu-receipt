@@ -36,6 +36,9 @@ document.addEventListener('DOMContentLoaded',()=>{
       foodContainer.classList.remove('gottem');
       itemPrice.classList.remove('gottem');
     }
+
+    // saving selection in the console log
+    console.log(`${foodContainer.textContent}: ${quantity}`);
   }
   
     // call the total function
@@ -55,7 +58,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     printy.forEach(element=>{
         element.textContent = billy;
     });
-    
+  
     // console.log("Total: " + billy);
     }
   
