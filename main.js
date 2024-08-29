@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 
     let paragraph = document.createElement("div");
     paragraph.className = "list-e"; 
-    let listR = document.querySelector(".list-r");
+    let listR = document.querySelector(".list-div");
     paragraph.textContent = `${quantity} x ${foodContainer.textContent} ${finalPartial}`;
     listR.appendChild(paragraph);
 
