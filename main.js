@@ -68,10 +68,20 @@ document.addEventListener('DOMContentLoaded',()=>{
     // console.log("Total: " + billy);
     }
   
-    let quantityIn = document.querySelectorAll('.pieces');
-    quantityIn.forEach(input=>{
-      input.addEventListener('change', calculatePartial);
-    });
+    function debounce(func, delay){
+      let timeout;
+      return function (...args){
+          clearTimeout(timeout);
+          timeout = setTimeout(() => func.apply(this, args), delay);
+      };
+  }
+  
+  let calculatePartialDebounced = debounce(calculatePartial, 250);
+  
+  let quantityIn = document.querySelectorAll('.pieces');
+  quantityIn.forEach(input => {
+      input.addEventListener('change', calculatePartialDebounced);
+  });
   
     // be sure it starts with 0 so, initializing it
     bill();
