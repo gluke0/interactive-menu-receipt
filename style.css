@@ -112,7 +112,7 @@ footer{
     background-color: rgb(227, 226, 226)!important;
 }
 
-.receipt {
+.receipt{
     background-color: rgb(227, 226, 226)!important;
     width: 50rem;
     position: relative;
@@ -120,7 +120,7 @@ footer{
     box-shadow: 0 -0.4rem 1rem -0.4rem rgba(0, 0, 0, 0.2);
   }
   
-.receipt::after {
+.receipt::after{
     background-image: linear-gradient(135deg, rgb(227, 226, 226) 0.5rem, transparent 0),
       linear-gradient(-135deg, rgb(227, 226, 226) 0.5rem, transparent 0);
     background-repeat: repeat-x;
