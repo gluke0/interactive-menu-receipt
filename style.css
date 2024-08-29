@@ -134,7 +134,7 @@ footer{
     height: 1rem;
 }
 
-.top-receipt-up, .top-receipt-down{
+.top-receipt-up, .top-receipt-down, .list-r, .list-e{
     background-color: rgb(227, 226, 226)!important;
 }
 
