@@ -38,7 +38,12 @@ document.addEventListener('DOMContentLoaded',()=>{
     }
 
     // saving selection in the console log
-    console.log(`${foodContainer.textContent}: ${quantity}`);
+    console.log(`${foodContainer.textContent}: ${quantity} --> ${finalPartial}`);
+
+    let paragraph = document.createElement("p");
+    let listR = document.querySelector(".list-r");
+    paragraph.textContent = `${foodContainer.textContent} x ${quantity} --> ${finalPartial}`;
+    listR.appendChild(paragraph);
   }
   
     // call the total function
