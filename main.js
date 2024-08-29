@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     let paragraph = document.createElement("p");
     paragraph.className = "list-e"; 
     let listR = document.querySelector(".list-r");
-    paragraph.textContent = `${foodContainer.textContent} x ${quantity} --> ${finalPartial}`;
+    paragraph.textContent = `${quantity} x ${foodContainer.textContent} ${finalPartial}`;
     listR.appendChild(paragraph);
 
     // saving selection in the console log

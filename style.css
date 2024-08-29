@@ -145,4 +145,9 @@ footer{
 
 .top-receipt-down{
     font-weight: 550;
+    margin-bottom: 1.2rem;
+}
+
+.list-r{
+    line-height: 0.8rem;
 }
