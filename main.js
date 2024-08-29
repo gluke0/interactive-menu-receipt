@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded',()=>{
       itemPrice.classList.remove('gottem');
     }
 
-    let paragraph = document.createElement("p");
+    let paragraph = document.createElement("div");
     paragraph.className = "list-e"; 
     let listR = document.querySelector(".list-r");
     paragraph.textContent = `${quantity} x ${foodContainer.textContent} ${finalPartial}`;
