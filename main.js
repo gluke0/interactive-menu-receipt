@@ -37,9 +37,13 @@ document.addEventListener('DOMContentLoaded',()=>{
       itemPrice.classList.remove('gottem');
     }
 
+    // clearing old selection from the receipt (not working well)
+    let listR = document.querySelector(".list-r");
+    listR.innerHTML = "";
+
     let paragraph = document.createElement("div");
     paragraph.className = "list-div"; 
-    let listR = document.querySelector(".list-r");
+    // let listR = document.querySelector(".list-r");
     paragraph.innerHTML = `${quantity} x <span class="list-s"> ${foodContainer.textContent} </span> ${finalPartial}`;
     listR.appendChild(paragraph);
 
