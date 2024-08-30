@@ -134,8 +134,17 @@ footer{
     height: 1rem;
 }
 
-.top-receipt-up, .top-receipt-down, .list-r, .list-div, .list-s{
+.top-receipt-up, .top-receipt-down, .list-r, .list-div, .list-s, .saving-div, .saving{
     background-color: rgb(227, 226, 226)!important;
+}
+
+.saving-div{
+    display: flex;
+    justify-content: end;
+}
+
+.saving{
+    font-size: larger;
 }
 
 .top-receipt-up{
