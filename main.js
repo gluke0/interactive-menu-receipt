@@ -37,15 +37,24 @@ document.addEventListener('DOMContentLoaded',()=>{
       itemPrice.classList.remove('gottem');
     }
 
-    // clearing old selection from the receipt (not working well)
     let listR = document.querySelector(".list-r");
-    listR.innerHTML = "";
+    let existingItem = listR.querySelector(`.list-div[data-food="${foodContainer.textContent}"]`);
 
-    let paragraph = document.createElement("div");
-    paragraph.className = "list-div"; 
-    // let listR = document.querySelector(".list-r");
-    paragraph.innerHTML = `${quantity} x <span class="list-s"> ${foodContainer.textContent} </span> ${finalPartial}`;
-    listR.appendChild(paragraph);
+    // update the list if the element is there yet
+    if(existingItem){
+        existingItem.innerHTML = `${quantity} x <span class="list-s"> ${foodContainer.textContent} </span> ${finalPartial}`;
+    }else if(quantity > 0){
+        let paragraph = document.createElement("div");
+        paragraph.className = "list-div";
+        paragraph.setAttribute("data-food", foodContainer.textContent);
+        paragraph.innerHTML = `${quantity} x <span class="list-s"> ${foodContainer.textContent} </span> ${finalPartial}`;
+        listR.appendChild(paragraph);
+    }
+
+    // if quantity is 0 delete the element
+    if(quantity === 0 && existingItem){
+        listR.removeChild(existingItem);
+    }
 
     // saving selection in the console log
     // console.log(`${foodContainer.textContent}: ${quantity} --> ${finalPartial}`);
