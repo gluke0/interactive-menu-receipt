@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded',()=>{
         titleSection.addEventListener('click',()=>{
             let pieces = titleSection.nextElementSibling;
             let indicator = titleSection.querySelector('.indicator');
-            if (pieces.style.display = 'none' || pieces.style.display == ''){
+            if (pieces.style.display === 'none' || pieces.style.display === ''){
                 pieces.style.display = 'block';
                 indicator.classList.remove("fa-chevron-down");
                 indicator.classList.add("fa-chevron-up");
