@@ -141,6 +141,7 @@ footer{
 .saving-div{
     display: flex;
     justify-content: end;
+    cursor: pointer;
 }
 
 .saving{
