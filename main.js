@@ -120,6 +120,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 // open the receipt list in a new tab
 let buttons = document.querySelectorAll('.saving-div');
 let receipt = document.querySelector('.list-r');
+let toPay = document.querySelector('.total-money');
 
 buttons.forEach(button=>{
   button.addEventListener('click',()=>{
@@ -132,6 +133,8 @@ buttons.forEach(button=>{
         </head>
         <body>
           ${receipt.outerHTML}
+          <br>
+          ${toPay.outerHTML}
         </body>
       </html>
     `;
