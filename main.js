@@ -118,3 +118,6 @@ document.addEventListener('DOMContentLoaded',()=>{
 });
 
 // open the receipt list in a new tab
+let buttons = document.querySelectorAll('.saving-div');
+let receipt = document.querySelector('.list-r');
+
