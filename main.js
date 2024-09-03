@@ -116,3 +116,5 @@ document.addEventListener('DOMContentLoaded',()=>{
         }); 
     });
 });
+
+// open the receipt list in a new tab
