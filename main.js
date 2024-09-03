@@ -121,3 +121,21 @@ document.addEventListener('DOMContentLoaded',()=>{
 let buttons = document.querySelectorAll('.saving-div');
 let receipt = document.querySelector('.list-r');
 
+buttons.forEach(button=>{
+  button.addEventListener('click',()=>{
+    let newTab = window.open('', '_blank');
+    // creating the new html to print data in
+    let newHtmlTab = `
+      <html>
+        <head>
+          <title> Order List </title>
+        </head>
+        <body>
+          ${listDiv.outerHTML}
+        </body>
+      </html>
+    `;
+
+    newTab.document.write(newHtmlTab);    
+  });
+});
