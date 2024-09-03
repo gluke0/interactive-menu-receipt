@@ -131,7 +131,7 @@ buttons.forEach(button=>{
           <title> Order List </title>
         </head>
         <body>
-          ${listDiv.outerHTML}
+          ${receipt.outerHTML}
         </body>
       </html>
     `;
