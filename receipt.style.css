@@ -7,6 +7,7 @@
     font-optical-sizing: auto; 
 }
 
+/* actual style */
 section{
     display: flex;
     justify-content: center;
