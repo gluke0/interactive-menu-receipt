@@ -7,6 +7,11 @@
     font-optical-sizing: auto; 
 }
 
+section{
+    display: flex;
+    justify-content: center;
+}
+
 .receipt{
     background-color: rgb(227, 226, 226)!important;
     width: 50rem;
