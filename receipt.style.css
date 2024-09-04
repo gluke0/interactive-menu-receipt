@@ -4,7 +4,6 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: "Roboto Flex", sans-serif;
     font-optical-sizing: auto; 
 }
 
@@ -30,6 +29,6 @@
     height: 1rem;
 }
 
-.top-receipt-up, .top-receipt-down, .list-r, .list-div, .list-s, .saving-div, .saving, #saving{
+.top-receipt-up, .top-receipt-down, .list-r, .list-div, .list-s, .saving-div, .saving, #saving, .total-money{
     background-color: rgb(227, 226, 226)!important;
 }
