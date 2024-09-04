@@ -134,7 +134,7 @@ buttons.forEach(button=>{
           <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
         </head>
         <body>
-        <section class="container-sm p-3">
+        <section class="p-3">
           <div class="receipt">
             <span class="mt-2 font-monospace">${receipt.outerHTML}</span>
             <br>
