@@ -130,8 +130,8 @@ buttons.forEach(button=>{
       <html>
         <head>
           <title> Order List </title>
-
-           <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+          <link rel="stylesheet" href="receipt.style.css">
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
         </head>
         <body>
         <section class="container-sm p-3">
@@ -147,3 +147,5 @@ buttons.forEach(button=>{
     newTab.document.write(newHtmlTab);    
   });
 });
+
+
