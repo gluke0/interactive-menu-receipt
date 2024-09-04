@@ -1,0 +1,35 @@
+/* reset */
+*{
+    background-color: rgb(189, 186, 186)!important;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto; 
+}
+
+.receipt{
+    background-color: rgb(227, 226, 226)!important;
+    width: 50rem;
+    position: relative;
+    padding: 1rem;
+    box-shadow: 0 -0.4rem 1rem -0.4rem rgba(0, 0, 0, 0.2);
+  }
+  
+.receipt::after{
+    background-image: linear-gradient(135deg, rgb(227, 226, 226) 0.5rem, transparent 0),
+      linear-gradient(-135deg, rgb(227, 226, 226) 0.5rem, transparent 0);
+    background-repeat: repeat-x;
+    background-size: 1rem;
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    width: 100%;
+    height: 1rem;
+}
+
+.top-receipt-up, .top-receipt-down, .list-r, .list-div, .list-s, .saving-div, .saving, #saving{
+    background-color: rgb(227, 226, 226)!important;
+}
