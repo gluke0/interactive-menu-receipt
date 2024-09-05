@@ -168,3 +168,10 @@ footer{
     font-weight: 500;
     font-style: italic;
 }
+
+/* note section v.1 */
+#note{
+    background-color: rgb(192, 188, 188)!important;
+    border: 1px solid red;
+    padding: 0.2rem;
+}
