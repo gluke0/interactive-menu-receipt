@@ -45,3 +45,12 @@ section{
     line-height: 2rem;
 }
 
+/* notes section v.1 */
+#note{
+    padding: 0.2rem;
+    width: 50%;
+    border: none;
+    background-color: rgb(200, 198, 198)!important;
+    border-radius: 0.3rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
