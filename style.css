@@ -171,10 +171,12 @@ footer{
 
 /* notes section v.1 */
 #note{
-    background-color: rgb(192, 188, 188)!important;
-    border: 1px solid red;
     padding: 0.2rem;
     width: 50%;
+    border: none;
+    background-color: rgb(200, 198, 198)!important;
+    border-radius: 0.3rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 /* notes section v.2 */
