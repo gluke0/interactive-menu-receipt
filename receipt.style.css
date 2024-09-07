@@ -35,7 +35,7 @@ section{
     height: 1rem;
 }
 
-.top-receipt-up, .top-receipt-down, .list-r, .list-div, .list-s, .saving-div, .saving, #saving, .total-money{
+.top-receipt-up, .top-receipt-down, .list-r, .list-div, .list-s, .saving-div, .saving, #saving, .total-money, #note{
     background-color: rgb(227, 226, 226)!important;
 }
 
@@ -48,9 +48,6 @@ section{
 /* notes section v.1 */
 #note{
     padding: 0.2rem;
-    width: 50%;
+    width: 100%;
     border: none;
-    background-color: rgb(200, 198, 198)!important;
-    border-radius: 0.3rem;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
