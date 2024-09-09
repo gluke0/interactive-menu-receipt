@@ -60,6 +60,8 @@ document.addEventListener('DOMContentLoaded',()=>{
         paragraph.appendChild(paraNote);
     }
 
+    // need to save the data in the input when updating the quantity of the food 
+
     // if quantity is 0 delete the element
     if(quantity === 0 && existingItem){
         listR.removeChild(existingItem);
