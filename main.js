@@ -45,10 +45,14 @@ document.addEventListener('DOMContentLoaded',()=>{
         existingItem.innerHTML = `${quantity} x <span class="list-s"> ${foodContainer.textContent} </span> ${finalPartial}`;
     }else if(quantity > 0){
         let paragraph = document.createElement("div");
+        let paraNote = document.createElement("div")
         paragraph.className = "list-div";
+        paraNote.className = "note-div";
         paragraph.setAttribute("data-food", foodContainer.textContent);
         paragraph.innerHTML = `${quantity} x <span class="list-s"> ${foodContainer.textContent} </span> ${finalPartial}`;
+        paraNote.innerHTML = `<input type="text" id="note">`;
         listR.appendChild(paragraph);
+        paragraph.appendChild(paraNote);
     }
 
     // if quantity is 0 delete the element
@@ -183,7 +187,7 @@ buttons.forEach(button=>{
           <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
         </head>
         <body>
-        
+
         <section class="p-3">
           <div class="receipt">
             <span class="mt-2 font-monospace">${receipt.outerHTML}</span>
