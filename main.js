@@ -126,7 +126,55 @@ let notes = document.querySelector('.note');
 buttons.forEach(button=>{
   button.addEventListener('click',()=>{
     let newTab = window.open('', '_blank');
-    // creating the new html to print data in
+    // creating the new html to print data in - no notes
+    // let newHtmlTab = `
+    //   <html>
+    //     <head>
+    //       <title> Order List </title>
+    //       <link rel="stylesheet" href="receipt.style.css">
+    //       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    //     </head>
+    //     <body>
+    //     <section class="p-3">
+    //       <div class="receipt">
+    //         <span class="mt-2 font-monospace">${receipt.outerHTML}</span>
+    //         <br>
+    //         <span class="text-center font-monospace"> ${toPay.outerHTML} </span>
+    //         <br>
+    //         <span class="text-center font-monospace"> ${notes.outerHTML} </span>
+    //       </div>
+
+    //     </section>
+    //       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script
+    //     </body>
+    //   </html>
+    // `;
+
+    // creating the new html to print data in - notes v.1
+    // let newHtmlTab = `
+    //   <html>
+    //     <head>
+    //       <title> Order List </title>
+    //       <link rel="stylesheet" href="receipt.style.css">
+    //       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    //     </head>
+    //     <body>
+    //     <section class="p-3">
+    //       <div class="receipt">
+    //         <span class="mt-2 font-monospace">${receipt.outerHTML}</span>
+    //         <br>
+    //         <span class="text-center font-monospace"> ${toPay.outerHTML} </span>
+    //         <br>
+    //         <span class="text-center font-monospace"> ${notes.outerHTML} </span>
+    //       </div>
+
+    //     </section>
+    //       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script
+    //     </body>
+    //   </html>
+    // `;
+
+    // creating the new html to print data in - notes v.2
     let newHtmlTab = `
       <html>
         <head>
@@ -140,8 +188,6 @@ buttons.forEach(button=>{
             <span class="mt-2 font-monospace">${receipt.outerHTML}</span>
             <br>
             <span class="text-center font-monospace"> ${toPay.outerHTML} </span>
-            <br>
-            <span class="text-center font-monospace"> ${notes.outerHTML} </span>
           </div>
 
         </section>
