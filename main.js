@@ -41,8 +41,13 @@ document.addEventListener('DOMContentLoaded',()=>{
     let existingItem = listR.querySelector(`.list-div[data-food="${foodContainer.textContent}"]`);
 
     // update the list if the element is there yet
-    if(existingItem){
-        existingItem.innerHTML = `${quantity} x <span class="list-s"> ${foodContainer.textContent} </span> ${finalPartial}`;
+    if (existingItem) {
+      existingItem.innerHTML = `
+        ${quantity} x <span class="list-s"> ${foodContainer.textContent} </span> ${finalPartial}
+        <div class="note-div">
+        <input type="text" id="note" placeholder="notes...">
+        </div>
+      `;
     }else if(quantity > 0){
         let paragraph = document.createElement("div");
         let paraNote = document.createElement("div")
