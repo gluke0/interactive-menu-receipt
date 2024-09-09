@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded',()=>{
         paraNote.className = "note-div";
         paragraph.setAttribute("data-food", foodContainer.textContent);
         paragraph.innerHTML = `${quantity} x <span class="list-s"> ${foodContainer.textContent} </span> ${finalPartial}`;
-        paraNote.innerHTML = `<input type="text" id="note">`;
+        paraNote.innerHTML = `<input type="text" id="note" placeholder="notes...">`;
         listR.appendChild(paragraph);
         paragraph.appendChild(paraNote);
     }
