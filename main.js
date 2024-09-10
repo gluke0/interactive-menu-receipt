@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded',()=>{
       existingItem.innerHTML = `
         ${quantity} x <span class="list-s"> ${foodContainer.textContent} </span> ${finalPartial}
         <div class="note-div">
-          <input type="text" id="note" placeholder="notes...">
+          <input type="text" id="note" value="" placeholder="notes...">
         </div>
       `;
     }else if(quantity > 0){
