@@ -192,6 +192,7 @@ buttons.forEach(button=>{
             </div>
             <br>
             <span class="text-center font-monospace"> ${toPay.outerHTML} </span>
+            <textarea class="font-monospace" name="note" id="note" placeholder="notes..." cols="40" rows="5"></textarea>
           </div>
         </section>
 
