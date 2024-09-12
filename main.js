@@ -56,9 +56,6 @@ document.addEventListener('DOMContentLoaded',()=>{
     if(quantity === 0 && existingItem){
         listR.removeChild(existingItem);
     }
-
-    // saving selection in the console log
-    // console.log(`${foodContainer.textContent}: ${quantity} --> ${finalPartial}`);
   }
   
     // call the total function
@@ -78,8 +75,6 @@ document.addEventListener('DOMContentLoaded',()=>{
     printy.forEach(element=>{
         element.textContent = billy;
     });
-  
-    // console.log("Total: " + billy);
     }
   
     function debounce(func, delay){
