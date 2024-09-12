@@ -41,13 +41,27 @@ document.addEventListener('DOMContentLoaded',()=>{
     let existingItem = listR.querySelector(`.list-div[data-food="${foodContainer.textContent}"]`);
 
     // update the list if the element is there yet
-    if (existingItem){
-      existingItem.innerHTML = `
-        ${quantity} x <span class="list-s"> ${foodContainer.textContent} </span> ${finalPartial}
-        <div class="note-div">
-          <input type="text" id="note" value="" placeholder="notes...">
-        </div>
-      `;
+    // if (existingItem){
+    //   existingItem.innerHTML = `
+    //     ${quantity} x <span class="list-s"> ${foodContainer.textContent} </span> ${finalPartial}
+    //     <div class="note-div">
+    //       <input type="text" id="note" value="" placeholder="notes...">
+    //     </div>
+    //   `;
+//   }else if(quantity > 0){
+//     let paragraph = document.createElement("div");
+//     let paraNote = document.createElement("div")
+//     paragraph.className = "list-div";
+//     paraNote.className = "note-div";
+//     paragraph.setAttribute("data-food", foodContainer.textContent);
+//     paragraph.innerHTML = `${quantity} x <span class="list-s"> ${foodContainer.textContent} </span> ${finalPartial}`;
+//     paraNote.innerHTML = `<input type="text" id="note" placeholder="notes...">`;
+//     listR.appendChild(paragraph);
+//     paragraph.appendChild(paraNote);
+// }
+      if (existingItem){
+        existingItem.innerHTML = `
+          ${quantity} x <span class="list-s"> ${foodContainer.textContent} </span> ${finalPartial}`;
     }else if(quantity > 0){
         let paragraph = document.createElement("div");
         let paraNote = document.createElement("div")
@@ -55,12 +69,8 @@ document.addEventListener('DOMContentLoaded',()=>{
         paraNote.className = "note-div";
         paragraph.setAttribute("data-food", foodContainer.textContent);
         paragraph.innerHTML = `${quantity} x <span class="list-s"> ${foodContainer.textContent} </span> ${finalPartial}`;
-        paraNote.innerHTML = `<input type="text" id="note" placeholder="notes...">`;
         listR.appendChild(paragraph);
-        paragraph.appendChild(paraNote);
     }
-
-    // need to save the data in the input when updating the quantity of the food 
 
     // if quantity is 0 delete the element
     if(quantity === 0 && existingItem){
@@ -198,6 +208,9 @@ buttons.forEach(button=>{
         <section class="p-3">
           <div class="receipt">
             <span class="mt-2 font-monospace">${receipt.outerHTML}</span>
+            <div class="note-div">
+             <input type="text" id="note" value="" placeholder="notes...">
+            </div>
             <br>
             <span class="text-center font-monospace"> ${toPay.outerHTML} </span>
           </div>
