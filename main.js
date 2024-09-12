@@ -175,7 +175,7 @@ buttons.forEach(button=>{
     //   </html>
     // `;
 
-    // creating the new html to print data in - notes v.2
+    // creating the new html to print data in - notes
     let newHtmlTab = `
       <html>
         <head>
