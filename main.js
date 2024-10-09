@@ -176,4 +176,3 @@ buttons.forEach(button=>{
     newTab.document.write(newHtmlTab);    
   });
 });
-
